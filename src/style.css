@@ -1,1 +1,12 @@
-/* css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+}

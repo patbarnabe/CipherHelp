@@ -6,9 +6,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root">
+
+  <main>
+    <section>
+      <form class="input_area">
+        <div class="encode">
+          <textarea id="input_encode" placeholder="Digite sua mensagem aqui..." rows="5" cols="33"></textarea>
+          <button id="encode_button"> Criptografar </button>
+          <label for="offset_encode"> Deslocamento </label>
+          <input type="number" id="offset_encode">
+          <span id="encrypted_text"></span>
+        </div>
+          
+        <div class="decode">
+          <textarea id="input_decode" placeholder="Digite sua mensagem aqui..." rows="5" cols="33"></textarea>
+          <button id="decode_button"> Descriptografar </button>
+          <label for="offset_decode"> Deslocamento </label>
+          <input type="number" id="offset_decode">
+          <span id="decrypted_text"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+  
+  <!-- <div id="root">
     <h1>Hello world!</h1>
-  </div>
+  </div> -->
   <script src="index.js" type="module"></script>
 </body>
 </html>
