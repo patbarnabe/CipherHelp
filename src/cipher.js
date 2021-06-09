@@ -29,10 +29,10 @@ const cipher = {
 
     for(let i=0; i<string.length; i++) {
       if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
-        decryptedCode = (((string.charCodeAt(i) - 65) - offset) % 26) + 65;
+        decryptedCode = (((string.charCodeAt(i) - 90) - offset) % 26) + 90;
       }
       else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
-        decryptedCode = (((string.charCodeAt(i) - 97) - offset) % 26) + 97;
+        decryptedCode = (((string.charCodeAt(i) - 122) - offset) % 26) + 122;
       }
       else if (string.charCodeAt(i) === 32) {
         decryptedCode = 32;

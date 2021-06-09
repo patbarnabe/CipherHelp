@@ -34,11 +34,11 @@ decodeButton.addEventListener('click', (event) => {
 
 
 console.log(cipher);
-console.log(cipher.encode("Patricia Barnabe", 3))
+console.log(cipher.encode("Patricia Barnabe", 150))
 console.log(cipher.decode("Sdwulfld Eduqdeh", 3))
 console.log(cipher.encode("Patricia Barnabe", 33))
 console.log(cipher.decode("Whaypjph Ihyuhil", 33))
-console.log(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG", 33))
-console.log(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 33))
-console.log(cipher.encode("abcdefghijklmnopqrstuvwxyz", 33))
-console.log(cipher.decode("hijklmnopqrstuvwxyzabcdefg", 33))
+console.log(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG", 150))
+console.log(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 150))
+console.log(cipher.encode("abcdefghijklmnopqrstuvwxyz", 150))
+console.log(cipher.decode("hijklmnopqrstuvwxyzabcdefg", 150))
