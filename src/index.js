@@ -1,25 +1,35 @@
 import cipher from './cipher.js';
 
 const encodeButton = document.querySelector('#encode_button');
-let inputEncode = document.querySelector('#input_encode').value;
-let offsetEncode = document.querySelector('#offset_encode').value;
-//let encryptedText = document.querySelector('#encrypted_text').value;
+let inputEncode = document.querySelector('#input_encode');
+let offsetEncode = document.querySelector('#offset_encode');
+let encodeText = document.querySelector('#encrypted_text');
 
 const decodeButton = document.querySelector('#decode_button');
-let inputDecode = document.querySelector('#input_decode').value;
-let offsetDecode = document.querySelector('#offset_decode').value;
-//let decryptedText = document.querySelector('#decrypted_text').value;
+let inputDecode = document.querySelector('#input_decode');
+let offsetDecode = document.querySelector('#offset_decode');
+let decodeText = document.querySelector('#decrypted_text');
 
 encodeButton.addEventListener('click', (event) => {
     event.preventDefault()
 
-    cipher.encode(inputEncode, offsetEncode)
+    const crypt = inputEncode.value.trim();
+    const encodeKey = offsetEncode.value;
+  
+    const encodeResult = cipher.encode(crypt, encodeKey);
+    
+    encodeText.innerHTML += encodeResult;
 })
 
 decodeButton.addEventListener('click', (event) => {
     event.preventDefault()
 
-    cipher.decode(inputDecode, offsetDecode)
+    const decrypt = inputDecode.value.trim();
+    const decodeKey = offsetDecode.value;
+
+    const decodeResult = cipher.decode(decrypt, decodeKey);
+
+    decodeText.innerHTML += decodeResult;
 })
 
 
