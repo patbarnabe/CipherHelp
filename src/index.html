@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>CipherHelp</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="sortcut icon" href="img/chave-da-porta.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Indie+Flower&family=Lato:wght@900&family=Montserrat:wght@100&display=swap" rel="stylesheet"></head>
 <body>
 
@@ -19,53 +20,115 @@
   <main>
     <section class="tool_container">
       <article class="tool_titles">
-        <img class="tool_img" src="img/two_women.png">
+        <img class="tool_img" src="img/two_women.png" alt="Duas mulheres se abraçando e olhando para frente">
         <div class="tool_btn_titulo">
           <h1 class="tool_titulo"> Enfrentar, por meio de um <br>
             <span class="tool_titulo_span">mecanismo <br> seguro,</span><br>
-            a violência contra a mulher.<br>
+            a violência contra a mulher.<br><br>
             <span class="tool_subtitulo">Essa é a nossa missão.</span>
           </h1>
   
-          <button class="btn_tool">Conheça nossa ferramenta</button>
+          <a href="#link_services"> 
+            <button class="btn_tool">Conheça nossa ferramenta</button>
+          </a>
+          
         </div>
       </article>
     </section>
 
     <section class="info_container">
       <article class="info_texts">
+        <img class="info_img" src="img/hands3.png" alt="Mãos de mulher entrelaçadas sobre fundo cinza">
+
         <div class="info_violence">
-          <h1 class="info_violence_titulo">Tipos de Violência</h1>
-          <p>Estão previstos cinco tipos de violência doméstica e familiar contra a mulher na Lei Maria da Penha: 
-            física, psicológica, moral, sexual e patrimonial − Capítulo II, art. 7º, incisos I, II, III, IV e V.<br>
+          <h1 class="info_violence_titulo">Tipos de Violência contra Mulher 🙍‍♀️</h1><br>
+          <p>Estão previstos cinco tipos de violência doméstica e familiar contra a mulher na <i>Lei Maria da Penha:</i> 
+            física, psicológica, moral, sexual e patrimonial − Capítulo II, art. 7º, incisos I, II, III, IV e V.<br><br>
             Essas formas de agressão são complexas, perversas, não ocorrem isoladas umas das outras e têm graves 
-            consequências para a mulher.<br>
+            consequências para a mulher.<br><br>
             Qualquer uma delas constitui ato de violação dos direitos humanos e 
-            deve ser denunciada.
+            deve ser denunciada.<br><br>
+            A <i>Central de Atendimento à Mulher</i> é um serviço criado para o combate à violência contra a mulher e oferece três 
+            tipos de atendimento: registros de denúncias, orientações para vítimas de violência e informações sobre leis e campanhas.
+            
+            <div class="info_denuncia">
+              <h2 class="font_change">Não se cale, denuncie.</h2><br><br>  
+
+              <img class="denuncia_img" src="/src/img/ligue_1802.png" alt="Central de Atendimento à Mulher - Ligue 180">
+            </div>
+
+            <a href="https://www.institutomariadapenha.org.br/" target="_blank" class="link_penha"> <i>Clique aqui para mais informações</i></a>
           </p>
         </div>
       </article>
     </section>
 
-    <section class="services">
-      <form class="input_area">
-        <div class="encode">
-          <textarea id="input_encode" placeholder="Digite sua mensagem aqui..." rows="5" cols="33"></textarea>
+    <section class="services" id="link_services">
+
+      <article class="services_container">
+        <div class="services_text">
+          <p class="services_text_p">Sabemos que, apesar dos altos indíces de violência contra mulher no Brasil, ainda existe uma enorme subnotificação desses crimes
+            causada, sobretudo, pelo imenso medo de denunciar o agressor. <br><br>O motivo de tal receio encontra-se, principalmente, 
+            nas ameaças cruéis sofridas pela vítima diante do ofensor. Por isso, na tentativa de criar um ambiente seguro e confiável, desenvolvemos
+            uma ferramenta para criptografar mensagens de socorro e desabafo das mulheres e encaminhá-las para a polícia ou para alguém de confiança.<br><br>
+            A CipherHelp é uma alternativa simples e acessível para toda e qualquer mulher que se encontre numa situação de violência e que, por diversas
+            razões, não disponha de meios físicos e/ou psicológicos para realizar uma denúncia presencial ou até mesmo buscar ajuda da família e amigos.
+           </p>
+        </div>
+
+         <div class="services_guide">
+          <h1 class="services_guide_title"> Como usar?</h1>
+          <p class="services_guide_text"> Para usar a <i>CipherHelp</i> e buscar a ajuda necessária, basta digitar sua mensagem no campo de texto, escolher a chave
+            de criptrografia e apertar no botão Codificar Mensagem. <br><br>Em seguida, sua mensagem criptrografada aparecerá na tela. Agora é só copiar o texto
+            codificado e enviar para uma instituição ou pessoa de confiança. Lembre-se também de fornecer o site e a sua chave de criptografia para que 
+            possam decodificar seu texto.<br><br>
+            Logo abaixo, disponibilizamos algumas opções seguras de denúncias como sugestão para envio da sua mensagem.
+          </p>
+         </div>
+      </article>
+
+      <section class="input_area">
+
+        <form class="encode">
+          <h1 class="close_locker">🔐</h1>
+
+          <textarea id="input_encode" placeholder="Digite sua mensagem aqui..." rows="20" cols="60"></textarea>
+
+          <div class="label_encode_offset">
+            <label class="label_offset1" for="offset_encode"> Chave 🔑</label>
+            <input type="number" id="offset_encode"/>
+          </div>
+
           <button id="encode_button"> Criptografar </button>
-          <label for="offset_encode"> Deslocamento </label>
-          <input type="number" id="offset_encode"/>
+
           <span id="encrypted_text"></span>
-        </div>
+        </form>
+
+        <hr width = “2” size = “00”>
           
-        <div class="decode">
-          <textarea id="input_decode" placeholder="Digite sua mensagem aqui..." rows="5" cols="33"></textarea>
+        <form class="decode">
+          <h1 class="open_locker">🔓</h1>
+
+          <textarea id="input_decode" placeholder="Digite sua mensagem aqui..." rows="20" cols="60"></textarea>
+          
+          <div class="label_decode_offset">
+            <label class="label_offset2" for="offset_decode"> Chave 🔑</label>
+            <input type="number" id="offset_decode"/>
+          </div>
+
           <button id="decode_button"> Descriptografar </button>
-          <label for="offset_decode"> Deslocamento </label>
-          <input type="number" id="offset_decode"/>
+
           <span id="decrypted_text"></span>
-        </div>
-      </form>
+        </form>
+      </section>
     </section>
+
+    <footer class="copyright">
+      <a href="https://www.linkedin.com/in/patriciabarnabe/" target="_blank">
+        <p class="copy_texto"> Copyright© Patrícia Barnabé 2021 </p>
+      </a>
+    </footer>
+
   </main>
   
   <!-- <div id="root">
