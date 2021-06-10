@@ -151,12 +151,19 @@ body {
     justify-content: space-evenly;
 }
 
-.services_text_p {
+.services_text_h{
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.services_text {
     font-family: 'Montserrat', sans-serif;
     font-weight:bolder;
     color: #371B13;
     font-size: 20px;
-    margin: 10%;
+    margin: 5%;
     text-align: justify;
     border: 4px solid #D49572;
     border-radius: 24px;
