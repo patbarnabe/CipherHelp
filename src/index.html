@@ -2,19 +2,58 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Caesar Cipher</title>
+  <title>CipherHelp</title>
   <link rel="stylesheet" href="style.css" />
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Indie+Flower&family=Lato:wght@900&family=Montserrat:wght@100&display=swap" rel="stylesheet"></head>
 <body>
 
+  <header class="home">
+    <section class="banner">
+      <div class="titulo_container">
+        <h1 class="titulo_banner">Cipher<span class="titulo_help">Help</span></h1>
+        <p class="subtitulo_banner"> proteção da mulher</p>
+      </div>
+    </section>
+  </header>
+
   <main>
-    <section>
+    <section class="tool_container">
+      <article class="tool_titles">
+        <img class="tool_img" src="img/two_women.png">
+        <div class="tool_btn_titulo">
+          <h1 class="tool_titulo"> Enfrentar, por meio de um <br>
+            <span class="tool_titulo_span">mecanismo <br> seguro,</span><br>
+            a violência contra a mulher.<br>
+            <span class="tool_subtitulo">Essa é a nossa missão.</span>
+          </h1>
+  
+          <button class="btn_tool">Conheça nossa ferramenta</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="info_container">
+      <article class="info_texts">
+        <div class="info_violence">
+          <h1 class="info_violence_titulo">Tipos de Violência</h1>
+          <p>Estão previstos cinco tipos de violência doméstica e familiar contra a mulher na Lei Maria da Penha: 
+            física, psicológica, moral, sexual e patrimonial − Capítulo II, art. 7º, incisos I, II, III, IV e V.<br>
+            Essas formas de agressão são complexas, perversas, não ocorrem isoladas umas das outras e têm graves 
+            consequências para a mulher.<br>
+            Qualquer uma delas constitui ato de violação dos direitos humanos e 
+            deve ser denunciada.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="services">
       <form class="input_area">
         <div class="encode">
           <textarea id="input_encode" placeholder="Digite sua mensagem aqui..." rows="5" cols="33"></textarea>
           <button id="encode_button"> Criptografar </button>
           <label for="offset_encode"> Deslocamento </label>
-          <input type="number" id="offset_encode">
+          <input type="number" id="offset_encode"/>
           <span id="encrypted_text"></span>
         </div>
           
@@ -22,7 +61,7 @@
           <textarea id="input_decode" placeholder="Digite sua mensagem aqui..." rows="5" cols="33"></textarea>
           <button id="decode_button"> Descriptografar </button>
           <label for="offset_decode"> Deslocamento </label>
-          <input type="number" id="offset_decode">
+          <input type="number" id="offset_decode"/>
           <span id="decrypted_text"></span>
         </div>
       </form>

@@ -3,10 +3,123 @@
     margin: 0;
     text-decoration: none;
     color: inherit;
-    font-family: 'Quicksand', sans-serif;
-    overflow: hidden;
 }
 
 textarea {
     resize: none;
+}
+
+body {
+    background-color: #B57556;
+}
+
+.banner {
+    background: url(../src/img/four_women.png) center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 50rem;
+    color: white;
+    display: flex;
+    justify-content:center;
+}
+
+.titulo_container {
+    border-radius: 70px;
+    background-color: #B57556;
+    padding: 1%;
+    width: 45%;
+    color: #371B13;
+    position: absolute;
+    bottom: 110px;
+    box-shadow: #371B13 0px 54px 55px, #371B13 0px -12px 30px, #371B13 0px 4px 6px, #371B13 0px 12px 13px, #371B13 0px -3px 5px;
+}
+
+.titulo_banner {
+    font-family: 'Forum', cursive;
+    font-size: 4rem;
+}
+
+.subtitulo_banner {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.titulo_help {
+    color: #f7d3ba;
+}
+
+.tool_titles {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    margin: 5% 20% 2% 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.tool_titulo {
+    margin-top: 20%;
+    border-top: solid #371B13;
+    border-bottom: solid #371B13;
+    padding: 10% 0%;
+}
+
+.tool_titulo_span {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    color: #371B13;
+    text-transform: uppercase;
+}
+
+.tool_subtitulo {
+    font-family: 'Lato', sans-serif;
+    color: #371B13;
+}
+
+.btn_tool {
+    border: 4px solid #f7d3ba;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #f7d3ba;
+    padding: 8%;
+    color: #371B13;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10% 0%;
+}
+
+.tool_img {
+    border-radius: 50%;
+}
+
+.tool_btn_titulo {
+    margin-left: 10%;
+}
+
+.info_container {
+    background: url("../src/img/hands2.jpg") center no-repeat;
+    background-size: contain;
+    padding-top: 20rem;
+    background-color: #BA9F99;
+}
+
+.info_violence {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    color: #371B13;
+    font-size: 20px;
+    margin: 0% 30%;
+    text-align: justify;
+    border: 4px solid #f7d3ba;
+    border-radius: 24px;
+    padding: 2%;
+}
+
+.info_violence_titulo {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    text-align: center;
 }
