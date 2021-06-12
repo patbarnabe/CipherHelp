@@ -52,7 +52,10 @@ const cipher = {
     // offset = (26 - offset) % 26;
     // decryptedText = cipher.encode(string, offset)
     // return decryptedText;
-    //}
+    // }
 };
 
 export default cipher;
+
+
+

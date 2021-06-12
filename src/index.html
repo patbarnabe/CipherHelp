@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Forum&family=Indie+Flower&family=Lato:wght@900&family=Montserrat:wght@100&display=swap" rel="stylesheet"></head>
 <body>
 
-  <header class="home">
+  <header class="home" id="header">
     <section class="banner">
       <div class="titulo_container">
         <h1 class="titulo_banner">Cipher<span class="titulo_help">Help</span></h1>
@@ -18,7 +18,7 @@
   </header>
 
   <main>
-    <section class="tool_container">
+    <section class="tool_container" id="mission">
       <article class="tool_titles">
         <img class="tool_img" src="img/two_women.png" alt="Duas mulheres se abraçando e olhando para frente">
         <div class="tool_btn_titulo">
@@ -31,12 +31,11 @@
           <a href="#link_services"> 
             <button class="btn_tool">Conheça nossa ferramenta</button>
           </a>
-          
         </div>
       </article>
     </section>
 
-    <section class="info_container">
+    <section class="info_container" id="violencias">
       <article class="info_texts">
         <img class="info_img" src="img/hands3.png" alt="Mãos de mulher entrelaçadas sobre fundo cinza">
 
@@ -88,7 +87,7 @@
          </div>
       </article>
 
-      <section class="input_area">
+      <section class="input_area" id="ferramenta">
 
         <form class="encode">
           <h1 class="close_locker">🔐</h1>
@@ -102,7 +101,7 @@
 
           <button id="encode_button"> Criptografar </button>
 
-          <span id="encrypted_text"></span>
+          <textarea id="encrypted_text" placeholder="Sua mensagem codificada aparecerá aqui..." rows="20" cols="60" disabled></textarea>
         </form>
 
         <hr width = “2” size = “00”>
@@ -119,10 +118,62 @@
 
           <button id="decode_button"> Descriptografar </button>
 
-          <span id="decrypted_text"></span>
+          <textarea id="decrypted_text" placeholder="Sua mensagem decodificada aparecerá aqui..." rows="20" cols="60" disabled></textarea>
         </form>
       </section>
     </section>
+
+    <section class="help_links" id="ajuda">
+
+    </section>
+
+    <nav class="navbar">
+      <ul>
+        <li> 
+            <a href="#header" > Home 👩🏽</a>
+        </li>
+
+        <li>
+            <p class="tracinhos"> | </p>
+        </li>
+        
+         <li> 
+            <a href="#mission" > Nossa Missão 👩🏼‍🦰</a>
+         </li>
+
+         <li>
+             <p class="tracinhos"> | </p>
+         </li>
+
+        <li>
+             <a href="#violencias" > Informações 👩🏿‍🦳</a>
+         </li>
+
+         <li>
+             <p class="tracinhos"> | </p>
+         </li>
+
+         <li> 
+             <a href="#link_services" > Como usar? 👱🏼‍♀️</a>
+        </li>
+
+        <li>
+          <p class="tracinhos"> | </p>
+        </li>
+
+        <li> 
+          <a href="#ferramenta" > CipherHelp 👩🏻</a>
+        </li>
+
+        <li>
+          <p class="tracinhos"> | </p>
+        </li>
+
+        <li> 
+          <a href="#ajuda" > Ajuda 👵🏾</a>
+        </li>
+      </ul>
+    </nav> 
 
     <footer class="copyright">
       <a href="https://www.linkedin.com/in/patriciabarnabe/" target="_blank">

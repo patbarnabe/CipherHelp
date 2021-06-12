@@ -9,6 +9,7 @@ textarea {
     resize: none;
     border-radius: 10px;
     border:#B57556 solid;
+    padding: 5%;
 }
 
 body {
@@ -281,7 +282,6 @@ body {
     border-radius: 10px;    
     background-color: #D49572;
     box-shadow: 0 0 0.2em #B57556, 0 0 0.2em #B57556, 0 0 0.2em #B57556;
-    padding: 5%;
 }
 
 .close_locker, .open_locker{
@@ -298,6 +298,33 @@ body {
     color: #D49572;
   }
 
-
+  .navbar {
+    background-color: #371B13;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar a{
+    color:#fff;
+    font-weight: bolder;  
+  }
+  
+  .navbar a:hover{
+    color: #000000;
+  }
+  
+  .navbar li{
+    display: inline-block;
+    line-height: 2.5;
+    margin: 0 1%;
+  }
 
 
