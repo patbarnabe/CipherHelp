@@ -14,6 +14,18 @@ const cipher = {
       else if (string.charCodeAt(i) === 32) {
         encryptedCode = 32;
       }
+      else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
+        encryptedCode = string.charCodeAt(i);
+      }
+      else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
+        encryptedCode = string.charCodeAt(i);
+      }
+      else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
+        encryptedCode = string.charCodeAt(i);
+      }
+      else if (string === "ç" || string === "Ç") {
+        encryptedCode = 63;
+      }
       else {
         encryptedCode += string.charCodeAt(i);
       }
@@ -36,6 +48,18 @@ const cipher = {
       }
       else if (string.charCodeAt(i) === 32) {
         decryptedCode = 32;
+      }
+      else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
+        decryptedCode = string.charCodeAt(i);
+      }
+      else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
+        decryptedCode = string.charCodeAt(i);
+      }
+      else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
+        decryptedCode = string.charCodeAt(i);
+      }
+      else if (string === "ç" || string === "Ç") {
+        decryptedCode = 63;
       }
       else {
         decryptedCode += string.charCodeAt(i);

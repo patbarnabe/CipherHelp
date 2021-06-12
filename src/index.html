@@ -52,8 +52,9 @@
             
             <div class="info_denuncia">
               <h2 class="font_change">Não se cale, denuncie.</h2><br><br>  
-
-              <img class="denuncia_img" src="/src/img/ligue_1802.png" alt="Central de Atendimento à Mulher - Ligue 180">
+              <a href="https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres" target="_blank">
+                <img class="denuncia_img" src="/src/img/ligue_1802.png" alt="Central de Atendimento à Mulher - Ligue 180">
+              </a>
             </div>
 
             <a href="https://www.institutomariadapenha.org.br/" target="_blank" class="link_penha"> <i>Clique aqui para mais informações</i></a>
@@ -102,9 +103,10 @@
           <button id="encode_button"> Criptografar </button>
 
           <textarea id="encrypted_text" placeholder="Sua mensagem codificada aparecerá aqui..." rows="20" cols="60" disabled></textarea>
+          <button class="clear_button" id="bota_limpar_encode">Limpar</button>
         </form>
 
-        <hr width = “2” size = “00”>
+        <hr width = "2" size = "00"/>
           
         <form class="decode">
           <h1 class="open_locker">🔓</h1>
@@ -119,12 +121,44 @@
           <button id="decode_button"> Descriptografar </button>
 
           <textarea id="decrypted_text" placeholder="Sua mensagem decodificada aparecerá aqui..." rows="20" cols="60" disabled></textarea>
+          <button class="clear_button" id="bota_limpar_decode">Limpar</button>
         </form>
       </section>
     </section>
 
-    <section class="help_links" id="ajuda">
+    <section class="help" id="ajuda">
+      <h5 class="footer_titulo"> Redes de Apoio </h5>
+      <div class="help_links">
+          <a href="https://www.gov.br/mdh/pt-br/ondh/" target="_blank" class="footer_link">
+              <img class="footer_logo" src="./img/disque-100.png" alt="Disque Direitos Humanos - Ligue 100">
+              <h3 class="footer_legenda"> Ouvidoria de Direitos Humanos </h3>
+          </a>
 
+          <a href="https://mdh.metasix.solutions/portal/servicos/informacao?t=50&servico=234" target="_blank" class="footer_link">
+              <img class="footer_logo" src="./img/denuncie_180.jpeg" alt="Central de Atendimento à Mulher">
+              <h3 class="footer_legenda"> Central de Atendimento à Mulher </h3>
+          </a>
+
+          <a href="https://www.gov.br/mdh/pt-br/ondh/servicos/grupo-vulneravel" target="_blank" class="footer_link">
+              <img class="footer_logo" src="./img/governo.jpeg" alt="Logo Governo Brasileiro">
+              <h3 class="footer_legenda"> Serviços de Ajuda</h3>
+          </a>
+
+          <a href="https://www.gov.br/mdh/pt-br" target="_blank" class="footer_link">
+              <img class="footer_logo" src="./img/mulheres_logo.png" alt="Logo Mulheres em verde e amarelo">
+              <h3 class="footer_legenda"> Ministério da Mulher, da Família e dos Direitos Humanos</h3>
+          </a>
+
+          <a href="https://www.policiacivil.pb.gov.br/noticias/denuncie-qualquer-violencia-contra-a-mulher-1" target="_blank" class="footer_link">
+            <img class="footer_logo" src="./img/policiapb.png" alt="Logo Polícia CIvil da Paraíba">
+            <h3 class="footer_legenda"> Polícia Civil - PB</h3>
+          </a>
+
+          <a href="http://www.delegaciaonline.pb.gov.br/pages/index.xhtml" target="_blank" class="footer_link">
+            <img class="footer_logo" src="./img/brasao.png.xhtml" alt="Brasão da Polícia Civil da Paraíba">
+            <h3 class="footer_legenda"> Delegacia Online - PB</h3>
+          </a>
+      </div>
     </section>
 
     <nav class="navbar">
