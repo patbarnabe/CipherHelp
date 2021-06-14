@@ -19,7 +19,7 @@ encodeButton.addEventListener('click', (event) => {
     const crypt = inputEncode.value.trim();
     const encodeKey = offsetEncode.value;
   
-    const encodeResult = cipher.encode(crypt, encodeKey);
+    const encodeResult = cipher.encode(encodeKey,crypt);
 
     if(crypt === '') {
         alert("Por favor, digite uma mensagem.");
@@ -36,7 +36,7 @@ decodeButton.addEventListener('click', (event) => {
     const decrypt = inputDecode.value.trim();
     const decodeKey = offsetDecode.value;
 
-    const decodeResult = cipher.decode(decrypt, decodeKey);
+    const decodeResult = cipher.decode(decodeKey, decrypt);
 
     if(decrypt === '') {
         alert("Por favor, digite uma mensagem.");

@@ -1,72 +1,100 @@
 const cipher = {
-    encode: (string, offset) => {
+    encode: (offset, string) => {
     offset = offset % 26;
     let encryptedText = "";
     let encryptedCode;
 
-    for(let i=0; i<string.length; i++) {
-      if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
-        encryptedCode = (((string.charCodeAt(i) - 65) + offset) % 26) + 65;
-      }
-      else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
-        encryptedCode = (((string.charCodeAt(i) - 97) + offset) % 26) + 97;
-      }
-      else if (string.charCodeAt(i) === 32) {
-        encryptedCode = 32;
-      }
-      else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
-        encryptedCode = string.charCodeAt(i);
-      }
-      else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
-        encryptedCode = string.charCodeAt(i);
-      }
-      else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
-        encryptedCode = string.charCodeAt(i);
-      }
-      else if (string === "ç" || string === "Ç") {
-        encryptedCode = 63;
-      }
-      else {
-        encryptedCode += string.charCodeAt(i);
-      }
-      encryptedText += String.fromCharCode(encryptedCode);
+    if(offset === 0 && string === "") {
+      throw new TypeError();
     }
-    return encryptedText;
+    else if(offset === 0) {
+      throw new TypeError();
+    } 
+    else if(offset === null && string ===[]) {
+      throw new TypeError();
+    }
+    // else if(offset === 0 && string === 0) {
+    //   new TypeError();
+    // }
+    else {
+      for(let i=0; i<string.length; i++) {
+        if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
+          encryptedCode = (((string.charCodeAt(i) - 65) + offset) % 26) + 65;
+        }
+        else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+          encryptedCode = (((string.charCodeAt(i) - 97) + offset) % 26) + 97;
+        }
+        else if (string.charCodeAt(i) === 32) {
+          encryptedCode = 32;
+        }
+        else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
+          encryptedCode = string.charCodeAt(i);
+        }
+        else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
+          encryptedCode = string.charCodeAt(i);
+        }
+        else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
+          encryptedCode = string.charCodeAt(i);
+        }
+        else if (string === "ç" || string === "Ç") {
+          encryptedCode = 63;
+        }
+        else {
+          encryptedCode += string.charCodeAt(i);
+        }
+        encryptedText += String.fromCharCode(encryptedCode);
+      }
+      return encryptedText;
+    }
   },
 
-  decode: (string, offset) => {
+  decode: (offset, string) => {
     offset = offset % 26;
     let decryptedText = "";
     let decryptedCode;
 
-    for(let i=0; i<string.length; i++) {
-      if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
-        decryptedCode = (((string.charCodeAt(i) - 90) - offset) % 26) + 90;
-      }
-      else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
-        decryptedCode = (((string.charCodeAt(i) - 122) - offset) % 26) + 122;
-      }
-      else if (string.charCodeAt(i) === 32) {
-        decryptedCode = 32;
-      }
-      else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
-        decryptedCode = string.charCodeAt(i);
-      }
-      else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
-        decryptedCode = string.charCodeAt(i);
-      }
-      else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
-        decryptedCode = string.charCodeAt(i);
-      }
-      else if (string === "ç" || string === "Ç") {
-        decryptedCode = 63;
-      }
-      else {
-        decryptedCode += string.charCodeAt(i);
-      }
-      decryptedText += String.fromCharCode(decryptedCode);
+    if(offset === 0 && string === "") {
+      throw new TypeError();
     }
-    return decryptedText;
+    else if(offset === 0) {
+      throw new TypeError();
+    } 
+    else if(offset === null && string ===[]) {
+      throw new TypeError();
+    }
+    // else if(offset === 0 && string === 0) {
+    //   new TypeError();
+    // }
+    else {
+      for(let i=0; i<string.length; i++) {
+        if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
+          decryptedCode = (((string.charCodeAt(i) - 90) - offset) % 26) + 90;
+        }
+        else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+          decryptedCode = (((string.charCodeAt(i) - 122) - offset) % 26) + 122;
+        }
+        else if (string.charCodeAt(i) === 32) {
+          decryptedCode = 32;
+        }
+        else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
+          decryptedCode = string.charCodeAt(i);
+        }
+        else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
+          decryptedCode = string.charCodeAt(i);
+        }
+        else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
+          decryptedCode = string.charCodeAt(i);
+        }
+        else if (string === "ç" || string === "Ç") {
+          decryptedCode = 63;
+        }
+        else {
+          decryptedCode += string.charCodeAt(i);
+        }
+        decryptedText += String.fromCharCode(decryptedCode);
+      }
+      return decryptedText;
+    }
   }
 
     // Alternativa para a função cipher.decode()

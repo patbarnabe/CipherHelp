@@ -16,8 +16,16 @@ body {
     background-color: #B57556;
 }
 
+.home {
+    height: 45rem;
+}
+
+.img_banner {
+    width: 100%;
+}
+
 .banner {
-    background: url(../src/img/four_women.png) center no-repeat;
+    /* background: url(../src/img/four_women.png) center no-repeat; */
     background-size: cover;
     text-align: center;
     padding-top: 50rem;
@@ -33,7 +41,7 @@ body {
     width: 45%;
     color: #371B13;
     position: absolute;
-    bottom: 110px;
+    bottom: 140px;
     box-shadow: #371B13 0px 54px 55px, #371B13 0px -12px 30px, #371B13 0px 4px 6px, #371B13 0px 12px 13px, #371B13 0px -3px 5px;
 }
 

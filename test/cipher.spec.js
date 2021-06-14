@@ -42,6 +42,14 @@ describe('cipher', () => {
     });
   });
 
+    it('should return "?" for "ç" with offset 33', () => {
+      expect(cipher.encode(33, 'ç')).toBe('?');
+    });
+
+    it('should return "?" for "Ç" with offset 33', () => {
+      expect(cipher.encode(33, 'Ç')).toBe('?');
+    });
+
   describe('cipher.decode', () => {
 
     it('should be a function', () => {
@@ -73,6 +81,14 @@ describe('cipher', () => {
     //
     it('should return " !@" para " !@"', () => {
       expect(cipher.decode(33, ' !@')).toBe(' !@');
+    });
+
+    it('should return "?" for "ç" with offset 33', () => {
+      expect(cipher.encode(33, 'ç')).toBe('?');
+    });
+
+    it('should return "?" for "Ç" with offset 33', () => {
+      expect(cipher.encode(33, 'Ç')).toBe('?');
     });
   });
 
