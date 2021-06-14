@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+    border-radius: 10px;
+    border:#B57556 solid;
+    padding: 5%;
+}
+
+body {
+    background-color: #B57556;
+}
+
+.home {
+    height: 45rem;
+}
+
+.img_banner {
+    width: 100%;
+}
+
+.banner {
+    /* background: url(../src/img/four_women.png) center no-repeat; */
+    background-size: cover;
+    text-align: center;
+    padding-top: 50rem;
+    color: white;
+    display: flex;
+    justify-content:center;
+}
+
+.titulo_container {
+    border-radius: 70px;
+    background-color: #B57556;
+    padding: 1%;
+    width: 45%;
+    color: #371B13;
+    position: absolute;
+    bottom: 140px;
+    box-shadow: #371B13 0px 54px 55px, #371B13 0px -12px 30px, #371B13 0px 4px 6px, #371B13 0px 12px 13px, #371B13 0px -3px 5px;
+}
+
+.titulo_banner {
+    font-family: 'Forum', cursive;
+    font-size: 4rem;
+}
+
+.subtitulo_banner {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.titulo_help {
+    color: #f7d3ba;
+}
+
+.tool_titles {
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
+    margin: 5% 20% 5% 20%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.tool_titulo {
+    margin-top: 20%;
+    border-top: solid #371B13;
+    border-bottom: solid #371B13;
+    padding: 10% 0%;
+}
+
+.tool_titulo_span {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    color: #371B13;
+    text-transform: uppercase;
+}
+
+.tool_subtitulo {
+    font-family: 'Lato', sans-serif;
+    color: #371B13;
+}
+
+.btn_tool {
+    border: 4px solid #f7d3ba;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #f7d3ba;
+    padding: 8%;
+    color: #371B13;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10% 0%;
+    cursor:pointer;
+    box-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+}
+
+.tool_img {
+    border-radius: 50%;
+}
+
+.tool_btn_titulo {
+    margin-left: 10%;
+}
+
+.info_container{
+    background-color: #D49572;
+}
+
+.info_texts {
+    text-align:center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.info_img {
+    height: 45rem;
+    border-radius: 50%;
+    margin: 5% 10% 5% 0%;
+}
+
+.info_violence {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    color: #371B13;
+    font-size: 20px;
+    margin: 5% 5% 5% 10%;
+    text-align: justify;
+    border: 4px solid #B57556;
+    border-radius: 24px;
+    padding: 2%;
+    background-color: #F7D3BA;
+}
+
+.info_violence_titulo {
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.link_penha{
+    text-decoration: underline;
+    margin-left: 12%;
+}
+
+.services_container {
+    background-color: #f0b595;
+    color:#371B13;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.services_text_h{
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.services_text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    color: #371B13;
+    font-size: 20px;
+    margin: 5%;
+    text-align: justify;
+    border: 4px solid #D49572;
+    border-radius: 24px;
+    padding: 2%;
+    background-color: #F7D3BA;
+    font-size: 20px
+}
+
+.services_guide {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bolder;
+    color: #371B13;
+    font-size: 20px;
+    margin: 5%;
+    text-align: justify;
+    border: 4px solid #D49572;
+    border-radius: 24px;
+    padding: 2%;
+    background-color: #F7D3BA;
+    font-size: 20px
+}
+
+.services_guide_title{
+    font-family: 'Forum', cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.font_change {
+    font-family: 'Forum', cursive;
+    font-size: 24px;
+    margin-top: 10%;;
+}
+
+.info_denuncia{
+    display: flex;
+}
+
+.denuncia_img {
+    height: 5rem;
+    margin: 0% 0% 5% 20%;
+}
+
+.input_area {
+    background-color: #EAC2A9;
+    color:#371B13;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cipher_img {
+    height: 40rem;
+    border-radius: 50%;
+    margin: 5% 5% 5% 0%;
+}
+
+.encode, .decode { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: 0 5% 5% 5%;
+}
+
+#encode_button, #decode_button {
+    border: 4px solid #f7d3ba;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #f7d3ba;
+    padding: 2%;
+    color: #371B13;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10%;
+    cursor:pointer;
+    box-shadow: 0 0 0.2em #B57556, 0 0 0.2em #B57556, 0 0 0.2em #B57556;
+}
+
+.label_offset1{
+    font-family: 'Forum', cursive;
+    color: #371B13;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 2% 20% 1% 20%;
+    text-align: center;
+}
+
+.label_offset2{
+    font-family: 'Forum', cursive;
+    color: #371B13;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 2% 33% 1% 38%;
+    text-align: center;
+}
+
+.label_encode_offset, .label_encode_offset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#offset_encode, #offset_decode{
+    margin: 2% 30%;
+    border: solid #B57556;
+    box-sizing: border-box;
+    border-radius: 24px;
+    box-shadow: 0 0 0.2em #B57556, 0 0 0.2em #B57556, 0 0 0.2em #B57556;
+}
+
+#encrypted_text, #decrypted_text{
+    border: #B57556 solid;
+    border-radius: 10px;    
+    background-color: #D49572;
+    box-shadow: 0 0 0.2em #B57556, 0 0 0.2em #B57556, 0 0 0.2em #B57556;
+}
+
+.close_locker, .open_locker{
+    text-align: center;
+    margin: 5%;
+}
+
+.copy_texto {
+    text-align: center;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background-color: #371B13;
+    color: #D49572;
+  }
+
+  .navbar {
+    background-color: #371B13;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .navbar a{
+    color:#fff;
+    font-weight: bolder;  
+  }
+  
+  .navbar a:hover{
+    color: #000000;
+  }
+  
+  .navbar li{
+    display: inline-block;
+    line-height: 2.5;
+    margin: 0 1%;
+  }
+
+  .help{
+    text-align: center;
+    font-family: 'Forum', cursive;
+    color: #371B13;   
+  }
+
+  .footer_titulo {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+
+  .footer_link {
+    display: inline-block;
+    width: 10%;
+    padding: 2rem 0;
+    margin: 0 2rem;
+    text-align: center;
+    color: #000000;
+  }
+
+  .footer_logo {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .footer_legenda {
+    font-size: 1rem;
+  }
+
+  .help_links {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .clear_button{
+    border: 4px solid #f7d3ba;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #f7d3ba;
+    padding: 2%;
+    color: #371B13;
+    font-family: 'Forum', cursive;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 2%;
+    cursor:pointer;
+    box-shadow: 0 0 0.2em #B57556, 0 0 0.2em #B57556, 0 0 0.2em #B57556;
+    width: 20%;
+  }
