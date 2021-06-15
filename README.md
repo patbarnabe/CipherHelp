@@ -17,20 +17,21 @@
 ---
 ## :dart: Sobre o produto 
 
-O CipherHelp foi desenvolvido com o objetivo de ajudar as mulheres que se encontram em situação de 
+O [CipherHelp](https://patbarnabe.github.io/SAP006-cipher/) foi desenvolvido com o objetivo de ajudar as mulheres que se encontram em situação de 
 vulnerabilidade e/ou sofrendo qualquer
 tipo de violência. Esse produto possui a missão de enfrentar, por meio de um
 mecanismo seguro, a violência contra a mulher. 
 
-A interface e design do site foram basedos nas cores das mulheres da imagem da Home,
-com a intenção de representar a diversidade da mulher em todo o site e na
-tentativa de torná-lo o mais acolhedor possível.
+A interface e design do site foram basedos nas cores das mulheres das imagens 
+com a intenção de representar a diversidade e a beleza da mulher por todo o site e na
+tentativa de torná-lo o mais acolhedor possível. Para o mesmo propósito, foram utilizados emojis de 
+diferentes mulheres nos links da navbar.
 
-A ferramenta construída (CipherHelp) não utiliza o mais seguro sistema de criptografia e que talvez não fosse viável para existir de verdade,  mas achei boa a ideia de tentar criar um ambiente seguro pras mulheres relatarem seus problemas e fiquei muito animada com a possibilidade de poder ajudá-las, ainda mais durante essa época pandêmica onde os casos de violência e subnotificação cresceram exponencialmente. Todo dia vejo diversas notícias de violência contra mulher e sei que essa realidade sempre existe (um grande infelizmente aqui), mas durante a pandemia parece que a situação de vulnerabilidade da mulher está ficando cada vez mais incontrolável.
+A princípio, percebi que a ferramenta construída (CipherHelp) não utiliza o mais seguro sistema de criptografia e que talvez não fosse viável para existir de verdade,  mas achei boa a ideia de tentar criar um ambiente seguro pras mulheres relatarem seus problemas e fiquei muito animada com a possibilidade de poder ajudá-las, ainda mais durante essa época pandêmica onde os casos de violência e subnotificação cresceram exponencialmente. Todo dia vejo diversas notícias de violência contra mulher e sei que essa realidade sempre existe (um grande infelizmente aqui), mas durante a pandemia parece que a situação de vulnerabilidade da mulher está ficando cada vez mais incontrolável.
 
 Gostaria de ter implementado a funcionalidade de envio direto da mensagem codificada para alguém ou para polícia por meio de e-mail, mas ainda não sei como fazer isso, se seria por API ou de outra maneira.  Contudo, essa era a intenção completa, poder enviar a mensagem diretamente do site com um alerta pra quem receber.
 
-Durante o desenvolvimento do projeto, percebi que essa ferramenta é perfeitamente segura para o seu devido propósito, ou seja, proteger a mensagem da vítima do seu agressor e, ao mesmo tempo, é uma ferramenta simples para ser usada por qualquer pessoa. Dessa forma, não seria necessário um super sistema de criptografia avançada, pois não estamos querendo proteger a mensagem de um hacker, mas sim de uma pessoa leiga (agressor).
+Durante o desenvolvimento do projeto, compreendi que essa ferramenta é perfeitamente segura para o seu devido propósito, ou seja, proteger a mensagem da vítima do seu agressor e, ao mesmo tempo, é uma ferramenta simples para ser usada por qualquer pessoa. Dessa forma, não seria necessário um super sistema de criptografia avançada, pois não estamos querendo proteger a mensagem de um hacker, mas sim de uma pessoa leiga (agressor).
 
 De início, pensei também em explicar no site como funciona a Cifra de César, pois me parecia algo importante para o usuário entender como tudo funciona. Porém, percebi que, na verdade, a explicação da cifra a tornaria menos segura e possivelmente decifrável, pois, como já foi dito anteriormente, essa cifra é simples e de fácil compreensão. Sendo assim, a informação sobre o método de criptografia não pode ser exibido para própria proteção da mensagem codificada.
 
