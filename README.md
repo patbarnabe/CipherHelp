@@ -6,10 +6,13 @@
 ## Índice
 
 * [1. Sobre o produto](#1-sobre-o-produto)
-* [2. Tipos de Violência contra Mulher](#2-tipos-de-violência-contra-mulher)
-* [3. Nosso Propósito](#3-nosso-propósito)
-* [4. Como usar?](#4-como-usar?)
-
+* [2. Tipos de Violência contra Mulher](#2-tipos-de-violencia-contra-mulher)
+* [3. Nosso Propósito](#3-nosso-proposito)
+* [4. Como usar?](#4-como-usar)
+* [5. Links para Redes de Apoio à Mulher](#5-links-para-redes-de-apoio-a-mulher)
+* [6. Tecnologias](#6-tecnologias)
+* [7. Resultados](#7-resultados)
+* [8. Sobre a autora](#8-sobre-a-autora)
 
 ---
 ## :dart: Sobre o produto 
@@ -19,19 +22,19 @@ vulnerabilidade e/ou sofrendo qualquer
 tipo de violência. Esse produto possui a missão de enfrentar, por meio de um
 mecanismo seguro, a violência contra a mulher. 
 
-A interface e design do site foi toda baseda nas cores das mulheres da imagem da Home,
-com a intenção de representar a diversidade da mulher em todo o site na
+A interface e design do site foram basedos nas cores das mulheres da imagem da Home,
+com a intenção de representar a diversidade da mulher em todo o site e na
 tentativa de torná-lo o mais acolhedor possível.
 
-Sei que a ferramenta construída (CipherHelp) não é tão segura por causa do próprio sistema de criptografia e que talvez não fosse viável para existir de verdade,  mas achei boa a ideia de tentar criar um ambiente seguro pras mulheres relatarem seus problemas e fiquei muito animada com a possibilidade de poder ajudar as mulheres, ainda mais durante essa época pandêmica onde os casos de medo e subnotificação cresceram exponencialmente por causa das circunstâncias que estamos vivendo. Todo dia vejo diversas notícias de violência contra mulher e sei que sempre existe (um grande infelizmente aqui), mas durante a pandemia parece que a situação de vulnerabilidade da mulher está ficando cada vez mais incontrolável.
+A ferramenta construída (CipherHelp) não utiliza o mais seguro sistema de criptografia e que talvez não fosse viável para existir de verdade,  mas achei boa a ideia de tentar criar um ambiente seguro pras mulheres relatarem seus problemas e fiquei muito animada com a possibilidade de poder ajudá-las, ainda mais durante essa época pandêmica onde os casos de violência e subnotificação cresceram exponencialmente. Todo dia vejo diversas notícias de violência contra mulher e sei que essa realidade sempre existe (um grande infelizmente aqui), mas durante a pandemia parece que a situação de vulnerabilidade da mulher está ficando cada vez mais incontrolável.
 
-Gostaria de ter implementado a funcionalidade de envio direto da mensagem codificada para alguém ou para polícia por meio de e-mail,  mas não sei como fazer isso, se seria por API ou de outra maneira.  Mas essa era a intenção completa, poder enviar a mensagem diretamente do site como um alerta pra quem receber.
+Gostaria de ter implementado a funcionalidade de envio direto da mensagem codificada para alguém ou para polícia por meio de e-mail, mas ainda não sei como fazer isso, se seria por API ou de outra maneira.  Contudo, essa era a intenção completa, poder enviar a mensagem diretamente do site com um alerta pra quem receber.
 
-Na verdade, percebi que essa ferramenta é perfeitamente segura para o seu devido propósito, ou seja, proteger a mensagem da vítima do seu agressor, e ao mesmo tempo é uma ferramenta simples para ser usada por qualquer pessoa. Dessa forma, não seria necessário um super sistema de criptografia avançada, pois não estamos querendo proteger a mensagem de um hacker, mas sim de uma pessoa leiga (agressor).
+Durante o desenvolvimento do projeto, percebi que essa ferramenta é perfeitamente segura para o seu devido propósito, ou seja, proteger a mensagem da vítima do seu agressor e, ao mesmo tempo, é uma ferramenta simples para ser usada por qualquer pessoa. Dessa forma, não seria necessário um super sistema de criptografia avançada, pois não estamos querendo proteger a mensagem de um hacker, mas sim de uma pessoa leiga (agressor).
 
-Pensei em explicar no site como funciona a Cifra de César, pois me parecia algo importante para o usuário entender como tudo funciona. Porém, percebi que na verdade, a explicação da cifra a tornaria menos segura e possivelmente decifrável, pois, como já foi dito anteriormente, essa cifra é simples e de fácil compreensão. Sendo assim, a informação sobre o método de criptografia não pode ser exibido para própria proteção da mensagem codificada.
+De início, pensei também em explicar no site como funciona a Cifra de César, pois me parecia algo importante para o usuário entender como tudo funciona. Porém, percebi que, na verdade, a explicação da cifra a tornaria menos segura e possivelmente decifrável, pois, como já foi dito anteriormente, essa cifra é simples e de fácil compreensão. Sendo assim, a informação sobre o método de criptografia não pode ser exibido para própria proteção da mensagem codificada.
 
-Gostaria que meu produto cuida-se de toda a parte de segurança e que a mulher "apenas" tivesse que se preocupar com a superação da barreira de pedir ajuda e contar sua história. Seria algo terrível se o agressor descobrisse que a vítima está tentando pedir ajuda, então isso deve ser evitado a todo custo.
+Por fim, gostaria que meu produto cuidasse de toda a parte de segurança e envio da mensagem e que a mulher "apenas" tivesse que se preocupar com a superação da barreira de pedir ajuda e contar sua história. Dessa forma, no futuro, pretendo incrementar a funcionalidade de envio direto da mensagem para uma fonte segura para que a vítima não precise se preocupar em copiar a mensagem e enviá-la por si própria.
 
 ---
 ## :woman: Tipos de Violência contra Mulher
@@ -81,12 +84,12 @@ Logo abaixo, disponibilizamos algumas opções seguras de denúncias como sugest
 ---
 ## ✔️ Resultados
 
-![img](.src/img/tela1.png)
-![img](.SAP006-cipher/src/img/tela2.png)
-![img](./src/img/tela1.png)
-![img](/src/img/tela1.png)
-![img](./SAP006-cipher/src/img/tela2.png)
-![img](/SAP006-cipher/src/img/tela2.png)
+![img](./img/tela1.png)
+![img](./img/tela2.png)
+![img](./img/tela3.png)
+![img](./img/tela4.png)
+![img](./img/tela5.png)
+![img](./img/tela6.png)
 
 ---
 ## :woman_technologist: Sobre a autora
