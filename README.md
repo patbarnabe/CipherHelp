@@ -84,12 +84,12 @@ Logo abaixo, disponibilizamos algumas opções seguras de denúncias como sugest
 ---
 ## ✔️ Resultados
 
-![img](.src/img/tela1.png)
-![img](.src/img/tela2.png)
-![img](.src/img/tela3.png)
-![img](.src/img/tela4.png)
-![img](.src/img/tela5.png)
-![img](.src/img/tela6.png)
+![img](./src/img/tela1.png)
+![img](./src/img/tela2.png)
+![img](./src/img/tela3.png)
+![img](./src/img/tela4.png)
+![img](./src/img/tela5.png)
+![img](./src/img/tela6.png)
 
 ---
 ## :woman_technologist: Sobre a autora
