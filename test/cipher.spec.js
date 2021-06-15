@@ -40,15 +40,39 @@ describe('cipher', () => {
     it('should return " !@" for " !@"', () => {
       expect(cipher.encode(33, ' !@')).toBe(' !@');
     });
-  });
 
-    it('should return "?" for "ç" with offset 33', () => {
+    it('should return "?" for "ç"', () => {
       expect(cipher.encode(33, 'ç')).toBe('?');
     });
 
-    it('should return "?" for "Ç" with offset 33', () => {
+    it('should return "?" for "ç" with offset -33', () => {
+      expect(cipher.encode(-33, 'ç')).toBe('?');
+    });
+
+    it('should return "?" for "Ç"', () => {
       expect(cipher.encode(33, 'Ç')).toBe('?');
     });
+
+    it('should return "?" for "Ç" with offset -33', () => {
+      expect(cipher.encode(-33, 'Ç')).toBe('?');
+    });
+
+    it('should return "0123456789" for "0123456789"', () => {
+      expect(cipher.encode(33, '0123456789')).toBe('0123456789');
+    });
+
+    it('should return "0123456789" for "0123456789" with offset -33', () => {
+      expect(cipher.encode(-33, '0123456789')).toBe('0123456789');
+    });
+
+    it('should return "{|}~" for "{|}~"', () => {
+      expect(cipher.encode(33, "{|}~")).toBe("{|}~");
+    });
+
+    it('should return "[`" for "[`"', () => {
+      expect(cipher.encode(33, "[`")).toBe("[`");
+    });
+  });
 
   describe('cipher.decode', () => {
 
@@ -84,12 +108,35 @@ describe('cipher', () => {
     });
 
     it('should return "?" for "ç" with offset 33', () => {
-      expect(cipher.encode(33, 'ç')).toBe('?');
+      expect(cipher.decode(33, 'ç')).toBe('?');
+    });
+
+    it('should return "?" for "ç" with offset -33', () => {
+      expect(cipher.decode(-33, 'ç')).toBe('?');
     });
 
     it('should return "?" for "Ç" with offset 33', () => {
-      expect(cipher.encode(33, 'Ç')).toBe('?');
+      expect(cipher.decode(33, 'Ç')).toBe('?');
+    });
+
+    it('should return "?" for "Ç" with offset -33', () => {
+      expect(cipher.decode(-33, 'Ç')).toBe('?');
+    });
+
+    it('should return "0123456789" for "0123456789" with offset 33', () => {
+      expect(cipher.decode(33, '0123456789')).toBe('0123456789');
+    });
+
+    it('should return "0123456789" for "0123456789" with offset -33', () => {
+      expect(cipher.decode(-33, '0123456789')).toBe('0123456789');
+    });
+
+    it('should return "{|}~" for "{|}~"', () => {
+      expect(cipher.decode(33, "{|}~")).toBe("{|}~");
+    });
+
+    it('should return "[`" for "[`"', () => {
+      expect(cipher.decode(33, "[`")).toBe("[`");
     });
   });
-
 });

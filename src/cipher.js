@@ -4,18 +4,22 @@ const cipher = {
     let encryptedText = "";
     let encryptedCode;
 
-    if(offset === 0 && string === "") {
-      throw new TypeError();
-    }
-    else if(offset === 0) {
-      throw new TypeError();
-    } 
-    else if(offset === null && string ===[]) {
-      throw new TypeError();
-    }
+    // if(offset === 0 && string === "") {
+    //   throw new TypeError("Argumento inválido");
+    // }
+    // else if(offset === 0) {
+    //   throw new TypeError("Argumento inválido");
+    // } 
+    // else if(offset === null && string ===[]) {
+    //   throw new TypeError("Argumento inválido");
+    // }
     // else if(offset === 0 && string === 0) {
     //   new TypeError();
     // }
+    if(string == "" || string == null || offset =="" || offset == null) {
+      // alert("Por favor, insira as informações necessárias.");
+      throw new TypeError("Argumentos inválidos", "cipher.js");
+    }
     else {
       for(let i=0; i<string.length; i++) {
         if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
@@ -39,9 +43,9 @@ const cipher = {
         else if (string === "ç" || string === "Ç") {
           encryptedCode = 63;
         }
-        else {
-          encryptedCode += string.charCodeAt(i);
-        }
+        // else {
+        //   encryptedCode += string.charCodeAt(i);
+        // }
         encryptedText += String.fromCharCode(encryptedCode);
       }
       return encryptedText;
@@ -53,18 +57,23 @@ const cipher = {
     let decryptedText = "";
     let decryptedCode;
 
-    if(offset === 0 && string === "") {
-      throw new TypeError();
-    }
-    else if(offset === 0) {
-      throw new TypeError();
-    } 
-    else if(offset === null && string ===[]) {
-      throw new TypeError();
-    }
+    // if(offset === 0 && string === "") {
+    //   throw new TypeError();
+    // }
+    // else if(offset === 0) {
+    //   throw new TypeError();
+    // } 
+    // else if(offset === null && string ===[]) {
+    //   throw new TypeError();
+    // }
     // else if(offset === 0 && string === 0) {
     //   new TypeError();
     // }
+
+    if(string == "" || string == null || offset =="" || offset == null) {
+      // alert("Por favor, insira as informações necessárias.")
+      throw new TypeError("Argumentos inválidos", "cipher.js");
+    }
     else {
       for(let i=0; i<string.length; i++) {
         if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
@@ -88,9 +97,9 @@ const cipher = {
         else if (string === "ç" || string === "Ç") {
           decryptedCode = 63;
         }
-        else {
-          decryptedCode += string.charCodeAt(i);
-        }
+        // else {
+        //   decryptedCode += string.charCodeAt(i);
+        // }
         decryptedText += String.fromCharCode(decryptedCode);
       }
       return decryptedText;
