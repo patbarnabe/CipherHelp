@@ -21,13 +21,9 @@ encodeButton.addEventListener('click', (event) => {
   
     const encodeResult = cipher.encode(encodeKey,crypt);
 
-    if(crypt === '') {
-        alert("Por favor, digite uma mensagem.");
-    } else {
-        encodeText.innerHTML += encodeResult;
-        inputEncode.value = "";
-        offsetEncode.value = "";
-    }
+    encodeText.innerHTML += encodeResult;
+    inputEncode.value = "";
+    offsetEncode.value = "";
 })
 
 decodeButton.addEventListener('click', (event) => {
@@ -38,13 +34,10 @@ decodeButton.addEventListener('click', (event) => {
 
     const decodeResult = cipher.decode(decodeKey, decrypt);
 
-    if(decrypt === '') {
-        alert("Por favor, digite uma mensagem.");
-    } else {
-        decodeText.innerHTML += decodeResult;
-        inputDecode.value = "";
-        offsetDecode.value = "";
-    }
+    decodeText.innerHTML += decodeResult;
+    inputDecode.value = "";
+    offsetDecode.value = "";
+
 })
 
 clearEncode.addEventListener('click', (event) => {
