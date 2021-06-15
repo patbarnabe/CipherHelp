@@ -7,15 +7,9 @@
 
 * [1. Sobre o produto](#1-sobre-o-produto)
 * [2. Tipos de Violência contra Mulher](#2-tipos-de-violência-contra-mulher)
-* [3. Nosso Propósito](#3-objetivos-de-aprendizagem)
-* [4. Como usar?](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do
-  projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
-* [8. Guias, dicas e leituras
-  complementares](#8-guias-dicas-e-leituras-complementares)
-* [9. Checklist](#9-checklist)
+* [3. Nosso Propósito](#3-nosso-propósito)
+* [4. Como usar?](#4-como-usar?)
+
 
 ---
 ## :dart: Sobre o produto 
@@ -87,12 +81,12 @@ Logo abaixo, disponibilizamos algumas opções seguras de denúncias como sugest
 ---
 ## ✔️ Resultados
 
-![img](./img/tela1.png)
-![img](./img/tela2.png)
-![img](./img/tela3.png)
-![img](./img/tela4.png)
-![img](./img/tela5.png)
-![img](./img/tela6.png)
+![img](.src/img/tela1.png)
+![img](.SAP006-cipher/src/img/tela2.png)
+![img](./src/img/tela1.png)
+![img](/src/img/tela1.png)
+![img](./SAP006-cipher/src/img/tela2.png)
+![img](/SAP006-cipher/src/img/tela2.png)
 
 ---
 ## :woman_technologist: Sobre a autora
