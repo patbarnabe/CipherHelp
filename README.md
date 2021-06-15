@@ -5,14 +5,14 @@
 
 ## Índice
 
-* [1. Sobre o produto](#1-sobre-o-produto)
-* [2. Tipos de Violência contra Mulher](#2-tipos-de-violencia-contra-mulher)
-* [3. Nosso Propósito](#3-nosso-proposito)
-* [4. Como usar?](#4-como-usar)
-* [5. Links para Redes de Apoio à Mulher](#5-links-para-redes-de-apoio-a-mulher)
-* [6. Tecnologias](#6-tecnologias)
-* [7. Resultados](#7-resultados)
-* [8. Sobre a autora](#8-sobre-a-autora)
+* [1. Sobre o produto](#dart-sobre-o-produto)
+* [2. Tipos de Violência contra Mulher](#woman-tipos-de-violência-contra-mulher)
+* [3. Nosso Propósito](#heart-nosso-propósito)
+* [4. Como usar?](#gear-como-usar)
+* [5. Links para Redes de Apoio à Mulher](#link-links-para-redes-de-apoio-à-mulher)
+* [6. Tecnologias](#robot-tecnologias)
+* [7. Resultados](#%EF%B8%8F-resultados)
+* [8. Sobre a autora](#woman_technologist-sobre-a-autora)
 
 ---
 ## :dart: Sobre o produto 
