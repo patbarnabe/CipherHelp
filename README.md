@@ -1,11 +1,14 @@
-# Cifra de César
+
+# CipherHelp :lock:
+
+## Projeto 1 - Cifra de César desenvolvido no bootcamp de Front-End da SAP006 Laboratória :yellow_heart:
 
 ## Índice
 
-* [1. Prefácio](#1-prefácio)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
+* [1. Sobre o produto](#1-sobre-o-produto)
+* [2. Tipos de Violência contra Mulher](#2-tipos-de-violência-contra-mulher)
+* [3. Nosso Propósito](#3-objetivos-de-aprendizagem)
+* [4. Como usar?](#4-considerações-gerais)
 * [5. Critérios de aceitação mínimos do
   projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
@@ -14,327 +17,86 @@
   complementares](#8-guias-dicas-e-leituras-complementares)
 * [9. Checklist](#9-checklist)
 
-***
+---
+## :dart: Sobre o produto 
 
-## 1. Prefácio
+O CipherHelp foi desenvolvido com o objetivo de ajudar as mulheres que se encontram em situação de 
+vulnerabilidade e/ou sofrendo qualquer
+tipo de violência. Esse produto possui a missão de enfrentar, por meio de um
+mecanismo seguro, a violência contra a mulher. 
 
-Cifrar significa codificar. A [cifra de
-César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar) é um dos primeiros
-tipos de criptografias conhecidas na história. O imperador romano Júlio César
-utilizava essa cifra para enviar ordens secretas aos seus generais no campo de
-batalha.
+A interface e design do site foi toda baseda nas cores das mulheres da imagem da Home,
+com a intenção de representar a diversidade da mulher em todo o site na
+tentativa de torná-lo o mais acolhedor possível.
 
-![caeser-cipher](https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png)
+Sei que a ferramenta construída (CipherHelp) não é tão segura por causa do próprio sistema de criptografia e que talvez não fosse viável para existir de verdade,  mas achei boa a ideia de tentar criar um ambiente seguro pras mulheres relatarem seus problemas e fiquei muito animada com a possibilidade de poder ajudar as mulheres, ainda mais durante essa época pandêmica onde os casos de medo e subnotificação cresceram exponencialmente por causa das circunstâncias que estamos vivendo. Todo dia vejo diversas notícias de violência contra mulher e sei que sempre existe (um grande infelizmente aqui), mas durante a pandemia parece que a situação de vulnerabilidade da mulher está ficando cada vez mais incontrolável.
 
-A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um
-tipo de cifra por substituição, em que cada letra do texto original é
-substituida por outra que se encontra há um número fixo de posições
-(deslocamento) mais a frente do mesmo alfabeto.
+Gostaria de ter implementado a funcionalidade de envio direto da mensagem codificada para alguém ou para polícia por meio de e-mail,  mas não sei como fazer isso, se seria por API ou de outra maneira.  Mas essa era a intenção completa, poder enviar a mensagem diretamente do site como um alerta pra quem receber.
 
-Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
+Na verdade, percebi que essa ferramenta é perfeitamente segura para o seu devido propósito, ou seja, proteger a mensagem da vítima do seu agressor, e ao mesmo tempo é uma ferramenta simples para ser usada por qualquer pessoa. Dessa forma, não seria necessário um super sistema de criptografia avançada, pois não estamos querendo proteger a mensagem de um hacker, mas sim de uma pessoa leiga (agressor).
 
-* Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-* A letra A será D
-* A palavra CASA será FDVD
+Pensei em explicar no site como funciona a Cifra de César, pois me parecia algo importante para o usuário entender como tudo funciona. Porém, percebi que na verdade, a explicação da cifra a tornaria menos segura e possivelmente decifrável, pois, como já foi dito anteriormente, essa cifra é simples e de fácil compreensão. Sendo assim, a informação sobre o método de criptografia não pode ser exibido para própria proteção da mensagem codificada.
 
-Atualmente todas as cifras de substituição alfabética simples, são decifradas
-com facilidade e não oferecem muita segurança na comunicação, mas a cifra de César
-muitas vezes pode fazer parte de um sistema mais complexo de criptografia, como
-a cifra de Vigenère, e tem aplicação no sistema ROT13.
+Gostaria que meu produto cuida-se de toda a parte de segurança e que a mulher "apenas" tivesse que se preocupar com a superação da barreira de pedir ajuda e contar sua história. Seria algo terrível se o agressor descobrisse que a vítima está tentando pedir ajuda, então isso deve ser evitado a todo custo.
 
-## 2. Resumo do projeto
+---
+## :woman: Tipos de Violência contra Mulher
+Estão previstos cinco tipos de violência doméstica e familiar contra a mulher na Lei Maria da Penha: física, psicológica, moral, sexual e patrimonial − Capítulo II, art. 7º, incisos I, II, III, IV e V.
 
-O que eu tenho que fazer exatamente? Neste projeto você criará a primeira
-aplicação web do _bootcamp_. Nela o usuário poderá cifrar e decifrar um texto
-indicando a chave de deslocamento (_offset_).
+Essas formas de agressão são complexas, perversas, não ocorrem isoladas umas das outras e têm graves consequências para a mulher.
 
-O tema é livre. Você deve pensar em alguma situação de vida real em que seja
-necessário cifrar uma mensagem e pensar em como deve ser a experiência do
-usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
-exemplo:
+Qualquer uma delas constitui ato de violação dos direitos humanos e deve ser denunciada.
 
-* Mensagens secretas para alguma pessoa.
-* Ferramenta de mensagens internas de uma organização em uma zona de conflito.
-* Cifrar cartões de crédito.
-* Criar senhas seguras para email.
+A Central de Atendimento à Mulher é um serviço criado para o combate à violência contra a mulher e oferece três tipos de atendimento: registros de denúncias, orientações para vítimas de violência e informações sobre leis e campanhas.
 
-## 3. Objetivos de aprendizagem
+---
+## :heart: Nosso Propósito
+Sabemos que, apesar dos altos índices de violência contra mulher no Brasil, ainda existe uma enorme subnotificação desses crimes causada, sobretudo, pelo imenso medo de denunciar o agressor.
 
-Neste projeto você aprenderá a construir uma aplicação web (_WebApp_) que irá
-interagir com o usuário final através do navegador utilizando HTML, CSS e
-JavaScript como ferramentas.
+O motivo de tal receio encontra-se, principalmente, nas ameaças cruéis sofridas pela vítima diante do ofensor. Por isso, na tentativa de criar um ambiente seguro e confiável, desenvolvemos uma ferramenta para criptografar mensagens de socorro e desabafo das mulheres e encaminhá-las para a polícia ou para alguém de confiança.
 
-### HTML e CSS
+A CipherHelp é uma alternativa simples e acessível para toda e qualquer mulher que se encontre numa situação de violência e que, por diversas razões, não disponha de meios físicos e/ou psicológicos para realizar uma denúncia presencial ou até mesmo buscar ajuda da família e amigos.
 
-* [ ] [Uso de HTML semântico.](https://developer.mozilla.org/pt-BR/docs/Glossario/Semantica#Sem%C3%A2ntica_em_HTML)
-* [ ] Uso de seletores de CSS.
+---
+## :gear: Como usar?
+Para usar a CipherHelp e buscar a ajuda necessária, basta digitar sua mensagem no campo de texto, escolher a chave de criptrografia e apertar no botão Criptografar.
 
-### DOM
+Em seguida, sua mensagem criptrografada aparecerá na tela. Agora é só copiar o texto codificado e enviar para uma instituição ou pessoa de confiança. Lembre-se também de fornecer esse site e a sua chave de criptografia para que possam decodificar seu texto utilizando o botão Descriptografar.
 
-* [ ] Uso de seletores do DOM.
-* [ ] Manipular eventos do DOM.
-* [ ] [Manipulação dinâmica do DOM.](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+Logo abaixo, disponibilizamos algumas opções seguras de denúncias como sugestão para envio da sua mensagem.
 
-### JavaScript
+---
+## :link: Links para Redes de Apoio à Mulher
+* [Instituto Maria da Penha](https://www.institutomariadapenha.org.br/)
+* [Disque denúncia de violência contra a mulher](https://www.gov.br/pt-br/servicos/denunciar-e-buscar-ajuda-a-vitimas-de-violencia-contra-mulheres)
+* [Ouvidoria Nacional de Direitos Humanos](https://www.gov.br/mdh/pt-br/ondh/)
+* [Central de Atendimento à Mulher](https://mdh.metasix.solutions/portal/servicos/informacao?t=50&servico=234)
+* [Serviços de Ajuda](https://www.gov.br/mdh/pt-br/ondh/servicos/grupo-vulneravel)
+* [Ministério da Mulher, da Família e dos Direitos Humanos](https://www.gov.br/mdh/pt-br)
+* [Polícia Civil - PB](https://www.policiacivil.pb.gov.br/noticias/denuncie-qualquer-violencia-contra-a-mulher-1)
+* [Delegacia Online - PB](http://www.delegaciaonline.pb.gov.br/pages/index.xhtml)
 
-* [ ] Manipulação de strings.
-* [ ] Uso de condicionais (if-else | switch | operador ternário)
-* [ ] Uso de laços _(loops)_ (for | for..in | for..of | while)
-* [ ] Uso de funções (parâmetros | argumentos | valor de retorno)
-* [ ] Declaração correta de variáveis (const & let)
+---
+## :robot: Tecnologias 
 
-### Testing
+- HTML 5
+- CSS3
+- JavaScript
+- Node.js
 
-* [ ] [Teste unitário.](https://jestjs.io/docs/pt-BR/getting-started)
+---
+## ✔️ Resultados
 
-### Estrutura do código e guia de estilo
+![img](./img/tela1.png)
+![img](./img/tela2.png)
+![img](./img/tela3.png)
+![img](./img/tela4.png)
+![img](./img/tela5.png)
+![img](./img/tela6.png)
 
-* [ ] Organizar e dividir o código em módulos (Modularização)
-* [ ] Uso de identificadores descritivos (Nomenclatura | Semântica)
-* [ ] Uso de linter (ESLINT)
+---
+## :woman_technologist: Sobre a autora
+### Patrícia Barnabé
 
-### Git e GitHub
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Gerenciamento de repositorios de GitHub (clone | fork | gh-pages)
-
-### UX
-
-* [ ] Desenhar a aplicação pensando e entendendo o usuário.
-* [ ] Criar protótipos para obter feedback e iterar.
-* [ ] Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)
-
-## 4. Considerações gerais
-
-* A equipe de coaches te dará um tempo sugerido. Lembre-se que cada uma aprende em um ritmo diferente.
-* O projeto será feito individualmente.
-* O projeto será entregue subindo o seu código no GitHub (commit/push) e o
-  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
-  preocupe, você aprenderá durante o projeto.
-
-## 5. Critérios de aceitação mínimos do projeto
-
-Use o alfabeto simples (somente maiúsculas e sem ç):
-
-* A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-### Definição do produto
-
-No README.md, escreva como você definiu seu usuário e qual foi o processo para
-definir o produto final a nível de experiência e interface.
-
-* Quem são os principais usuário do produto?
-* Quais são os objetivos do usuário em relação com o produto?
-* Como você acredita que o produto está resolvendo os problemas do usuário?
-
-### Interface do usuário (UI)
-
-A interface deve permitir ao usuário:
-
-* Eleger um _offset_ indicando quantas posições de deslocamento de caracteres
-  quer que a cifra utilize.
-* Inserir uma mensagem (texto) para ser cifrada.
-* Ver o resultado da mensagem cifrada.
-* Inserir uma mensagem (texto) para ser decifrada.
-* Ver o resultado da mensagem decifrada.
-
-### Scripts / Arquivos
-
-* `REAME.md`: deve explicar como fazer deploy, instalar e executar a aplicação,
-  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
-  foram tomadas.
-* `src/index.html`: aqui será o ponto de entrada da sua aplicação. Este arquivo
-  deve conter a marcação HTML e chamar o CSS e JavaScript necessários.
-* `src/cipher.js`: aqui você deve implementar o objeto `cipher`, o qual já está
-  _exportado_ no _boilerplate_. Este objeto (`cipher`) deve conter dois métodos:
-  - `cipher.encode(offset, string)`: `offset` é o número de posições que
-      queremos mover para a direita no alfabeto e `string` é a mensagem (texto)
-      que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` é o número de posições que
-      queremos mover para a esquerda no alfabeto e `string` é a mensagem (texto)
-      que queremos decifrar.
-* `src/index.js`: aqui você deve escutar os eventos de DOM, chamar
-  `cipher.encode()` e `cipher.decode()`.
-* `test/cipher.spec.js`: este arquivo contem alguns testes de exemplo e aqui
-  você deve implementar os testes para `cipher.encode()` e `cipher.decode()`.
-
-## 6. Hacker Edition
-
-As seções chamadas _Hacker Edition_ são **opcionais**. Se você **terminou** tudo
-e ainda sobrou tempo, faça essa parte. Assim você poderá aprofundar e exercitar
-mais sobre os objetivos de aprendizagem do projeto.
-
-A descrição geral deste projeto não menciona o que aconteceria com letras
-minúsculas ou outros caracteres (como espaço, pontuação, ç, ...). O
-_boilerplate_ inclui alguns testes (comentados) que vocês podem usar como ponto
-de partida para implementar o suporte para esses casos.
-
-Também não foi mencionado o que aconteceria com _offset_ negativo. Como parte da
-hacker edition te convidamos a explorar esse caso sozinha.
-
-## 7. Considerações técnicas
-
-A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse
-projeto **NÃO** está permitido usar bibliotecas ou frameworks, apenas JavaScript puro,
-também conhecido como vanilla JavaScript.
-
-Você não deve usar a _pseudo-variable_ `this`.
-
-Os testes unitários devem cobrir no mínimo de 70% dos _statements_, _functions_
-e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contém o setup e
-configurações necessárias para executar os testes assim como _code coverage_
-para ver o nível de cobertura dos testes usando o comando `npm test`.
-
-O _boilerplate_ inclui testes de exemplo, como ponto de partida.
-
-Para começar esse projeto você terá que fazer um _fork_ e _clonar_ este
-repositório que contém o _boilerplate_.
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida assim
-como toda a configuração de dependências e testes de exemplo:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
-
-O _boilerplate_ inclui tarefas que executam [eslint](https://eslint.org/) e
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar o `HTML` e
-`JavaScript` com respeito a uma guia de estilos. Ambas tarefas são executadas
-automaticamente antes de executar os testes quando usamos o comando `npm run
-test`.
-
-No caso do `JavaScript` estamos usando o `eslint` que está configurado no
-arquivo `.eslintrc` que contem o mínimo de informação como versão do
-JavaScript/ECMAScript, o ambiente (_browser_ nesse caso) e as [regras
-recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-
-Nas regras/guias de estilo usaremos das recomendações padrão tanto para o
-`eslint` quanto `htmlhint`.
-
-***
-
-## 8. Guias, dicas e leituras complementares
-
-### Primeiros passos
-
-1. Antes de mais nada, se assegure de ter um bom :pencil: editor de texto, algo
-   como o [Visual Studio Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/).
-2. Para executar os comandos você precisará de um :shell: UNIX Shell, que é um
-   programa que interpreta linhas de comando (command-line interpreter) e também
-   deve ter o git instalado. Se você usa um sistema operacional "UNIX-like",
-   como GNU/Linux ou MacOS, você já tem um _shell_ (terminal) instalado (e
-   provavelmente o `git` também). Se você usa Windows pode baixar a versão
-   completa do [Cmder](https://cmder.net/) que inclui o [Git
-   bash](https://git-scm.com/download/win), embora seja recomendado que você
-   teste :penguin: GNU/Linux. Se tem  Windows 10 ou superior pode usar o [Windows
-   Subsystem for
-   Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Faça seu próprio :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório.
-4. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/)
-   o _fork_ para seu computador (cópia local).
-5. 📦 Instale as dependências do projeto rodando o comando `npm install`. Mas
-   antes disso tenha certeza de ter instalado o [Node.js](https://nodejs.org/)
-   (que inclui o [npm](https://docs.npmjs.com/)).
-6. Se tudo foi bem, você deve conseguir executar os :traffic_light: testes
-   unitários com o comando `npm test`.
-7. Para ver a interface do seu programa no navegador, use o comando `npm start`
-   para iniciar o servidor web e entre na url `http://localhost:5000` no seu
-   navegador.
-8. Let's Code! :rocket:
-
-Este [video](https://drive.google.com/file/d/1CM6ZfpGfJMF6A8IcXoK5cFBBq-CY8oBR/view?usp=sharing) da Paloma também pode te ajudar nos seus primeiros passos ;)
-
-### Recursos extras
-
-A seguir um vídeo do Daniel que te ajudará a entender a fórmula matemática usada
-pela Cifra de César e algumas coisas mais que deve saber para resolver o seu
-projeto. Escute com atenção e siga seus conselhos ! :)
-
-[![Dicas Cifra de
-César](https://img.youtube.com/vi/utiLWBXmNQU/0.jpg)](https://www.youtube.com/watch?v=utiLWBXmNQU)
-
-Desenho da experiência do usuário (User Experience Design):
-
-* Ideação
-* Prototipagem
-* Teste e iteração
-
-Desenvolvimento Front-end:
-
-* Valores
-* Tipos
-* Variáveis
-* Controle de fluxo
-* Testes unitários
-* [Aprenda mais sobre
-  `charCodeAt()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
-* [Aprenda mais sobre
-  `String.fromCharCode()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
-* [Aprenda mais sobre
-  `ASCII`](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm)
-* [Documentação do NPM](https://docs.npmjs.com/)
-
-Ferramentas:
-
-* GitHub e GitHub Pages.
-* [Terminal](https://www.loom.com/share/29a6cf0f3c5245bf995738284b706468)
-* [Git config](https://www.loom.com/share/c7d445872b9f4618a24605fdcb26a48d)
-
-Organização do trabalho:
-
-* [Agilidade](https://www.youtube.com/watch?v=vozsjbh4noU)
-* [Scrum em menos de 2 minutos](https://www.youtube.com/watch?v=IKZHPjCQ2m8)
-* [Scrum em detalhes](https://www.youtube.com/watch?v=mt2hM4yrPn0). Não
-  esperamos que você faça tudo isso neste projeto. Iremos aprofundando nesses
-  conceitos ao longo do _bootcamp_.
-* [Guia em espanhol para a
-  cifra](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
-
-## 9. Checklist
-
-Essa seção é para te ajudar a ter um controle do que você precisa completar.
-
-### Parte Obrigatória
-
-* [ ] `README.md` adicionar informação sobre o processo e decisões do desenho.
-* [ ] `README.md` explicar claramente quem são os usuários e as suas relações
-  com o produto.
-* [ ] `README.md` explicar claramente como o produto soluciona os
-  problemas/necessidades dos usuários.
-* [ ] Usar VanillaJS.
-* [ ] **Não** usar `this`.
-* [ ] Implementar `cipher.encode`.
-* [ ] Implementar `cipher.decode`.
-* [ ] Passar o linter com a configuração definida.
-* [ ] Passar as provas unitárias.
-* [ ] Testes unitários cobrindo 70% dos _statements_, _functions_ e _lines_, e
-  no mínimo 50% das _branches_.
-* [ ] Interface que permita escolher o `offset` (chave de deslocamento) usava
-  para cifrar/decifrar.
-* [ ] Interface que permita escrever um texto para ser cifrado.
-* [ ] Interface que mostre o resultado da cifra corretamente.
-* [ ] Interface que permita escrever um texto para ser decifrado.
-* [ ] Interface que mostre o resultado decifrado corretamente.
-
-### Parte Opcional: "Hacker edition"
-
-* [ ] Cifrar/decifrar minúsculas.
-* [ ] Cifrar/decifrar _outros_ caractéres (espaços, pontuação, `ç`, `á`, ...).
-* [ ] Permitir usar `offset` negativo.
+- [LinkedIn](https://www.linkedin.com/in/patriciabarnabe)
+- E-mail: patbarnabe5@gmail.com
