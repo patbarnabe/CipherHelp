@@ -1,14 +1,14 @@
 import cipher from './cipher.js';
 
 const encodeButton = document.querySelector('#encode_button');
-let inputEncode = document.querySelector('#input_encode');
-let offsetEncode = document.querySelector('#offset_encode');
-let encodeText = document.querySelector('#encrypted_text');
+const inputEncode = document.querySelector('#input_encode');
+const offsetEncode = document.querySelector('#offset_encode');
+const encodeText = document.querySelector('#encrypted_text');
 
 const decodeButton = document.querySelector('#decode_button');
-let inputDecode = document.querySelector('#input_decode');
-let offsetDecode = document.querySelector('#offset_decode');
-let decodeText = document.querySelector('#decrypted_text');
+const inputDecode = document.querySelector('#input_decode');
+const offsetDecode = document.querySelector('#offset_decode');
+const decodeText = document.querySelector('#decrypted_text');
 
 const clearEncode = document.querySelector('#bota_limpar_encode');
 const clearDecode = document.querySelector('#bota_limpar_decode');
@@ -52,12 +52,3 @@ clearDecode.addEventListener('click', (event) => {
     decodeText.innerHTML = "";
 })
 
-// console.log(cipher);
-// console.log(cipher.encode("Patricia Barnabe", 3))
-// console.log(cipher.decode("Sdwulfld Eduqdeh", 3))
-// console.log(cipher.encode("Patricia Barnabe", 33))
-// console.log(cipher.decode("Whaypjph Ihyuhil", 33))
-// console.log(cipher.decode("HIJKLMNOPQRSTUVWXYZABCDEFG", 33))
-// console.log(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 33))
-// console.log(cipher.encode("abcdefghijklmnopqrstuvwxyz", 33))
-// console.log(cipher.decode("hijklmnopqrstuvwxyzabcdefg", 33))

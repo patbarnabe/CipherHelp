@@ -1,46 +1,28 @@
+//const LETTER_A = "A".charCodeAt()
+
 const cipher = {
-    encode: (offset, string) => {
+  encode: (offset, string) => {
     offset = offset % 26;
     let encryptedText = "";
     let encryptedCode;
 
-    // if(offset === 0 && string === "") {
-    //   throw new TypeError("Argumento inválido");
-    // }
-    // else if(offset === 0) {
-    //   throw new TypeError("Argumento inválido");
-    // } 
-    // else if(offset === null && string ===[]) {
-    //   throw new TypeError("Argumento inválido");
-    // }
-    // else if(offset === 0 && string === 0) {
-    //   new TypeError();
-    // }
-    if(string == "" || string == null || offset =="" || offset == null) {
-      // alert("Por favor, insira as informações necessárias.");
+    if (string == "" || string == null || offset == "" || offset == null) {
       throw new TypeError("Argumentos inválidos", "cipher.js");
-    }
-    else {
-      for(let i=0; i<string.length; i++) {
-        if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
-          encryptedCode = (((string.charCodeAt(i) - 65) + offset) % 26) + 65;
-        }
-        else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
-          encryptedCode = (((string.charCodeAt(i) - 97) + offset) % 26) + 97;
-        }
-        else if (string.charCodeAt(i) === 32) {
+    } else {
+      for (let i = 0; i < string.length; i++) {
+        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+          encryptedCode = ((string.charCodeAt(i) - 65 + offset) % 26) + 65;
+        } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+          encryptedCode = ((string.charCodeAt(i) - 97 + offset) % 26) + 97;
+        } else if (string.charCodeAt(i) === 32) {
           encryptedCode = 32;
-        }
-        else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
+        } else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
           encryptedCode = string.charCodeAt(i);
-        }
-        else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
+        } else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
           encryptedCode = string.charCodeAt(i);
-        }
-        else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
+        } else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
           encryptedCode = string.charCodeAt(i);
-        }
-        else if (string === "ç" || string === "Ç") {
+        } else if (string === "ç" || string === "Ç") {
           encryptedCode = 63;
         }
         // else {
@@ -57,44 +39,23 @@ const cipher = {
     let decryptedText = "";
     let decryptedCode;
 
-    // if(offset === 0 && string === "") {
-    //   throw new TypeError();
-    // }
-    // else if(offset === 0) {
-    //   throw new TypeError();
-    // } 
-    // else if(offset === null && string ===[]) {
-    //   throw new TypeError();
-    // }
-    // else if(offset === 0 && string === 0) {
-    //   new TypeError();
-    // }
-
-    if(string == "" || string == null || offset =="" || offset == null) {
-      // alert("Por favor, insira as informações necessárias.")
+    if (string == "" || string == null || offset == "" || offset == null) {
       throw new TypeError("Argumentos inválidos", "cipher.js");
-    }
-    else {
-      for(let i=0; i<string.length; i++) {
-        if (string.charCodeAt(i) >=65 && string.charCodeAt(i) <= 90) {
-          decryptedCode = (((string.charCodeAt(i) - 90) - offset) % 26) + 90;
-        }
-        else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
-          decryptedCode = (((string.charCodeAt(i) - 122) - offset) % 26) + 122;
-        }
-        else if (string.charCodeAt(i) === 32) {
+    } else {
+      for (let i = 0; i < string.length; i++) {
+        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+          decryptedCode = ((string.charCodeAt(i) - 90 - offset) % 26) + 90;
+        } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+          decryptedCode = ((string.charCodeAt(i) - 122 - offset) % 26) + 122;
+        } else if (string.charCodeAt(i) === 32) {
           decryptedCode = 32;
-        }
-        else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
+        } else if (string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64) {
           decryptedCode = string.charCodeAt(i);
-        }
-        else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
+        } else if (string.charCodeAt(i) >= 91 && string.charCodeAt(i) <= 96) {
           decryptedCode = string.charCodeAt(i);
-        }
-        else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
+        } else if (string.charCodeAt(i) >= 123 && string.charCodeAt(i) <= 127) {
           decryptedCode = string.charCodeAt(i);
-        }
-        else if (string === "ç" || string === "Ç") {
+        } else if (string === "ç" || string === "Ç") {
           decryptedCode = 63;
         }
         // else {
@@ -104,19 +65,16 @@ const cipher = {
       }
       return decryptedText;
     }
-  }
+  },
 
-    // Alternativa para a função cipher.decode()
-    // decode: (string, offset) => {
-    // let decryptedText = "";
+  // Alternativa para a função cipher.decode()
+  // decode: (string, offset) => {
+  // let decryptedText = "";
 
-    // offset = (26 - offset) % 26;
-    // decryptedText = cipher.encode(string, offset)
-    // return decryptedText;
-    // }
+  // offset = (26 - offset) % 26;
+  // decryptedText = cipher.encode(string, offset)
+  // return decryptedText;
+  // }
 };
 
 export default cipher;
-
-
-

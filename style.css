@@ -5,15 +5,19 @@
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #B57556;
+}
+
 textarea {
     resize: none;
     border-radius: 10px;
     border:#B57556 solid;
     padding: 5%;
-}
-
-body {
-    background-color: #B57556;
 }
 
 .home {
@@ -306,7 +310,7 @@ body {
     color: #D49572;
   }
 
-  .navbar {
+.navbar {
     background-color: #371B13;
     height: 50px;
     width: 100%;
@@ -318,61 +322,61 @@ body {
     right: 0;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
-  }
+}
   
-  .navbar a{
+.navbar a{
     color:#fff;
     font-weight: bolder;  
-  }
+}
   
-  .navbar a:hover{
+.navbar a:hover{
     color: #000000;
-  }
+}
   
-  .navbar li{
+.navbar li{
     display: inline-block;
     line-height: 2.5;
     margin: 0 1%;
-  }
+}
 
-  .help{
+.help{
     text-align: center;
     font-family: 'Forum', cursive;
     color: #371B13;   
-  }
+}
 
-  .footer_titulo {
+.footer_titulo {
     font-size: 2rem;
     margin-top: 2%;
-  }
+}
 
-  .footer_link {
+.footer_link {
     display: inline-block;
     width: 10%;
     padding: 2rem 0;
     margin: 0 2rem;
     text-align: center;
     color: #000000;
-  }
+}
 
-  .footer_logo {
+.footer_logo {
     display: inline-block;
     width: 100px;
     text-align: center;
     border-radius: 10px;
-  }
+}
   
-  .footer_legenda {
+.footer_legenda {
     font-size: 1rem;
-  }
+}
 
-  .help_links {
+.help_links {
     max-width: 100%;
     display: flex;
     justify-content: space-evenly;
-  }
+}
 
-  .clear_button{
+.clear_button{
     border: 4px solid #f7d3ba;
     box-sizing: border-box;
     border-radius: 24px;
@@ -386,4 +390,4 @@ body {
     cursor:pointer;
     box-shadow: 0 0 0.2em #B57556, 0 0 0.2em #B57556, 0 0 0.2em #B57556;
     width: 20%;
-  }
+}
