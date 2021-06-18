@@ -61,3 +61,5 @@ clearDecode.addEventListener('click', (event) => {
 // console.log(cipher.encode("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 33))
 // console.log(cipher.encode("abcdefghijklmnopqrstuvwxyz", 33))
 // console.log(cipher.decode("hijklmnopqrstuvwxyzabcdefg", 33))
+
+//teste ssh keygen
