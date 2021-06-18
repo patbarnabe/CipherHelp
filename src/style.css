@@ -5,15 +5,19 @@
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #B57556;
+}
+
 textarea {
     resize: none;
     border-radius: 10px;
     border:#B57556 solid;
     padding: 5%;
-}
-
-body {
-    background-color: #B57556;
 }
 
 .home {
