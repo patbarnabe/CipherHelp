@@ -75,7 +75,7 @@ Logo abaixo, disponibilizamos algumas opções seguras de denúncias como sugest
 * [Delegacia Online - PB](http://www.delegaciaonline.pb.gov.br/pages/index.xhtml)
 
 ---
-## :robot: Tecnologias 
+## :robot: Tecnologias Utilizadas
 
 - HTML 5
 - CSS3
